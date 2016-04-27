@@ -12,7 +12,7 @@
 
 class Cluster {
 
-    friend std::ostream& operator<<(std::ostream &ostr,const Cluster &cl);
+    friend std::ostream &operator<<(std::ostream &ostr, const Cluster &cl);
 
 private:
 
@@ -25,11 +25,11 @@ private:
     std::vector<double> centroid;
 
 public:
-    Cluster() = default ;
+    Cluster() = default;
 
     Cluster(const Cluster &cl);
 
-    Cluster& merge(const Cluster &right);
+    Cluster &merge(const Cluster &right);
 
     Cluster(Point p);
 
@@ -39,7 +39,7 @@ public:
 
     Cluster &operator=(const Cluster &right);
 
-    static double euclidean_distance(const Cluster &a,const Cluster &b);
+    static double euclidean_distance(const Cluster &a, const Cluster &b);
 
 };
 

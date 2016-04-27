@@ -23,7 +23,7 @@ void Cluster::insertPoint(Point p) {
         }
         else {
             sum_vector.at(i) += p.coordinates.at(i);
-            centroid.at(i)=(sum_vector.at(i) / num_of_points);
+            centroid.at(i) = (sum_vector.at(i) / num_of_points);
         }
 
     }
@@ -80,7 +80,7 @@ double Cluster::euclidean_distance(const Cluster &a, const Cluster &b) {
 /**
  * Merges two clusters
  */
-Cluster& Cluster::merge(const Cluster &right) {
+Cluster &Cluster::merge(const Cluster &right) {
 
     vector<Point>::const_iterator points_begin = right.cluster_points.cbegin();
     vector<Point>::const_iterator points_end = right.cluster_points.cend();
@@ -92,7 +92,7 @@ Cluster& Cluster::merge(const Cluster &right) {
     }
 
     //the left cluster is essentially a new cluster - so change its cluster id
-    this->cluster_id=id_generator;
+    this->cluster_id = id_generator;
     ++id_generator;
     return *this;
 }
@@ -108,13 +108,13 @@ std::ostream &operator<<(std::ostream &out_stream, const Cluster &cl) {
     for (Point p:cl.cluster_points) {
         std::cout << p;
     }
-    std::cout << "sum vector:" ;
+    std::cout << "sum vector:";
     for (double sum:cl.sum_vector) {
         out_stream << sum;
         out_stream << " ";
     }
 
-    out_stream << std::endl<<"Centroid:";
+    out_stream << std::endl << "Centroid:";
 
     for (double d:cl.centroid) {
         out_stream << d << ",";
