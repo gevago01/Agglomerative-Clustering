@@ -35,6 +35,11 @@ which has a complexity of **O(log(n))**. Since step **3** and **4** are
    2. CMake 3.5
    3. STL Containers (no libraries)
 
-
+## Notes
+1. The project can work for any number of dimensions
+2. A sample input file is provided that contains 3D points to be clustered
+3. The nearest pair of clusters is chosen using the centroid approach
+    (i.e. the clusters whose centroids are closer are merged at
+    each step)
 
 
