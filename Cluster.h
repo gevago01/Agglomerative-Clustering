@@ -21,9 +21,6 @@ private:
     long cluster_id;
     int num_of_points;
     std::vector<double> sum_vector;
-    std::vector<double> sq_sum_vector;
-    std::vector<double> variance;
-    std::vector<double> st_deviation;
     std::vector<Point> cluster_points;
     std::vector<double> centroid;
 

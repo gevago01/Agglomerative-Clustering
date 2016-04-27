@@ -32,10 +32,6 @@ private:
     my_priority_queue prior_queue;
 
     std::map<long, Cluster> all_clusters;
-    /*associates cluster ids to priority queues, first element
-     * in queue is the nearest to the cluster specified by the key*/
-//    std::map<long, std::priority_queue<double, std::vector<InterClusterDistance>, comparator>> distance_matrix;
-    std::map<long, std::priority_queue<double, my_priority_queue, comparator>> distance_matrix;
 
 public:
     Agglomerate() = default;
