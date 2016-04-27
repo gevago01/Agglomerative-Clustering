@@ -14,5 +14,6 @@ int main() {
     agglomerate.calculateInitialDistances();
     agglomerate.agglomerate();
 
+    cout<<"done"<<endl;
     return 0;
 }
