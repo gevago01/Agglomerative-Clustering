@@ -41,5 +41,6 @@ which has a complexity of **O(log(n))**. Since step **3** and **4** are
 3. The nearest pair of clusters is chosen using the centroid approach
     (i.e. the clusters whose centroids are closer are merged at
     each step)
+4. The distance metric used is *Euclidean Distance*
 
 
