@@ -14,6 +14,8 @@ InterClusterDistance& InterClusterDistance::operator=(const InterClusterDistance
     distance=right_cluster.distance;
     cluster_1=right_cluster.cluster_1;
     cluster_2=right_cluster.cluster_2;
+    
+    return *this;
 }
 
 double InterClusterDistance::getDistance() const {
@@ -21,9 +23,11 @@ double InterClusterDistance::getDistance() const {
 }
 
 std::ostream& operator<<(std::ostream & out_stream, const InterClusterDistance &icd) {
-    cout<<"Distance:"<<icd.distance;
-    cout<<" From Cluster:"<<icd.cluster_1;
-    cout<<" To Cluster:"<<icd.cluster_2<<endl;
+    out_stream<<"Distance:"<<icd.distance;
+    out_stream<<" From Cluster:"<<icd.cluster_1;
+    out_stream<<" To Cluster:"<<icd.cluster_2<<endl;
+
+    return out_stream;
 }
 
 long InterClusterDistance::getFrom() {
