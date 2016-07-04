@@ -43,4 +43,7 @@ which has a complexity of **O(log(n))**. Since step **3** and **4** are
     each step)
 4. The distance metric used is *Euclidean Distance*
 
+## Proof of Correctness
+Double checked with python [scipy hierarchical clustering](http://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html)
+
 
