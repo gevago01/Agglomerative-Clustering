@@ -57,7 +57,7 @@ void Agglomerate::agglomerate() {
     set<long> merged;
 
     //we should end up with only one cluster
-    while (prior_queue.size()!=1) {
+    while (prior_queue.size()!=0) {
         //take the two nearest clusters
         InterClusterDistance icd = prior_queue.top();
         from = icd.getFrom();
