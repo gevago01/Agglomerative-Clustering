@@ -37,11 +37,23 @@ which has a complexity of **O(log(n))**. Since step **3** and **4** are
 
 ## Notes
 1. The project can work for any number of dimensions
-2. A sample input file is provided that contains 3D points to be clustered
+2. A sample input file is provided that contains 3D points to be clustered (0.txt)
 3. The nearest pair of clusters is chosen using the centroid approach
     (i.e. the clusters whose centroids are closer are merged at
     each step)
 4. The distance metric used is *Euclidean Distance*
+   
+## How to run on Linux
+```bash
+git clone https://github.com/gevago01/Agglomerative-Clustering.git
+cd Agglomerative-Clustering
+mkdir build
+cd build
+cmake ..
+make
+cd build
+./Agglomerative-Clustering
+```
 
 ## Proof of Correctness
 Double checked with python [scipy hierarchical clustering](http://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html)
