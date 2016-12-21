@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11   CMakeFiles/Agglomerative.dir/main.cpp.o CMakeFiles/Agglomerative.dir/DataReader.cpp.o CMakeFiles/Agglomerative.dir/Point.cpp.o CMakeFiles/Agglomerative.dir/Cluster.cpp.o CMakeFiles/Agglomerative.dir/Agglomerate.cpp.o CMakeFiles/Agglomerative.dir/InterClusterDistance.cpp.o  -o Agglomerative 
