@@ -9,7 +9,6 @@
 #include <map>
 #include "InterClusterDistance.h"
 #include <queue>
-#include <values.h>
 #include <set>
 #include <iterator>
 #include <fstream>
