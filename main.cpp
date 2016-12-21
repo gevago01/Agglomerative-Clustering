@@ -5,7 +5,7 @@
 using std::cout;
 using std::endl;
 int main() {
-    DataReader dr("./0.txt");
+    DataReader dr("../0.txt");
 
     std::map<long,Cluster>  clusters=dr.returnClusters();
 
