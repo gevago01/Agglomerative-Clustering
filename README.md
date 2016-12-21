@@ -51,8 +51,7 @@ mkdir build
 cd build
 cmake ..
 make
-cd build
-./Agglomerative-Clustering
+./Agglomerative
 ```
 
 ## Proof of Correctness
